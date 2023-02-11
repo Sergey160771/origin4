@@ -1,7 +1,6 @@
 package Seminar1;
 
 public class main {
-
     public static void main(String[] args) {
 
         WendingMachine store=new WendingMachine ();
@@ -14,7 +13,10 @@ public class main {
                 .addProduct (new Beer ("alcohol free", 67.89))
                 .addProduct (new Beer ("notbeer", 67.89, 99))
                 .addProduct (new Fish ("vobla", 200.50, "dried"))
-                .addProduct (new Fish ("bream", 150.30, "smoked"));
+                .addProduct (new Fish ("bream", 150.30, "smoked"))
+                .addProduct (new Cheese ("PRESIDENT", 274.00, "fused"))
+                .addProduct (new Cheese ("Parmesan", 1779.00, "solid"))
+                .addProduct (new Cheese ("Dutch", 177.50, "semi-solid"));
 
         System.out.println (store);
 
@@ -42,9 +44,12 @@ public class main {
         System.out.println (store);
 
         System.out.println ("buying a's");
-        store.buy ("bream",150.30 );
+        store.buy ("vobla",200.50 );
         System.out.println (store);
 
+        System.out.println ("buying a's");
+        store.buy ("Parmesan", 1779.00);
+        System.out.println (store);
     }
 }
 
