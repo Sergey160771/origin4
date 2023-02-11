@@ -13,7 +13,7 @@ public class WendingMachine {
         return products;
     }
 
-    private List<Product> products = new ArrayList<>();
+    private  List<Product> products = new ArrayList<>();
     public WendingMachine addProduct(Product product){
         this.products.add(product);
 
@@ -50,6 +50,5 @@ public class WendingMachine {
         wdProducts.append(money);
         return wdProducts.toString();
     }
-
 
 }
